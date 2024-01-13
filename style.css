@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto';  
+    --white-transparent: rgba( 255,255,255, 0.3);
+    color: white;
+} 
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.flex-row{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+} 
+.info-container{
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.info-container p{
+    max-width: 70%;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+
+
+
+.container{
+    background:no-repeat center/120% url("images/bg.jpg");
+    filter: grayscale(80%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+
+}
+
+.form-container{ 
+    
+    width: 40%; 
+    border: 1px solid whitesmoke; 
+    margin-right: 20px;
+    min-height: 400px;
+    background-color: var(--white-transparent);
+    backdrop-filter: blur(3px);
+    align-items: flex-start;
+    border-radius: 3%;
+} 
+
+button{
+    min-width: 15rem;
+    height: 3rem;
+    background: none; 
+    text-align: center;
+    border-radius: 3%;
+}
+
+
+.sign-form{
+    color: white;
+    margin: 10px;
+    min-height: 80%;
+    gap: 10px;
+}
+
+
+
+form label{
+    display: block;
+    width: 70%;
+    text-align: center; 
+}
+form .content-input{
+    width: 90%;
+    height: 4rem;
+} 
+
+ .content-input input{
+    width: 90%;
+    border-radius: 2%;
+    height: 1.5rem;
+    border: none;
+    background-color: var(--white-transparent); 
+    border-bottom: 1px solid black;
+}
+
+#bool{
+    width: 90%;
+}
+.content-input input:focus{
+
+    border: none;
+    border: 3px solid green;
+    
+} 
+
+.content-input span{
+    position: relative;
+    top: 23px;
+}
+.content-input span.target{
+    position: relative;
+    top: 0px;
+}
+
+
+/*
+filtros 
+https://lenguajecss.com/css/efectos/filtros-css/
+gradient 
+https://css-tricks.com/gradient-borders-in-css/
+icons 
+https://fonts.google.com/icons
+https://www.w3schools.com/jsref/event_onfocus.asp
+
+
+*/
