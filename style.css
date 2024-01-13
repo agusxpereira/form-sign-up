@@ -120,6 +120,7 @@ form .content-input{
 .content-input span{
     position: relative;
     top: 23px;
+    transition: all .4s;
 }
 .content-input span.target{
     position: relative;
