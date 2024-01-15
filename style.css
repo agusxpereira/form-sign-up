@@ -4,8 +4,9 @@
     margin: 0;
     padding: 0; 
     font-family: 'Roboto';  
-    --white-transparent: rgba( 255,255,255, 0.3);
     color: white;
+    text-shadow: 1px 1px black;
+    --white-transparent: rgba( 255,255,255, 0.3);
 } 
 
 body{
@@ -22,18 +23,17 @@ body{
 } 
 
 .flex-row{
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 } 
 .info-container{
     justify-content: flex-start;
     align-items: flex-start;
     width: 50%;
+    margin-left: 5%;
 }
 
 .info-container p{
@@ -42,15 +42,11 @@ body{
     text-align: left;
 }
 
-
-
-
-
 .container{
     background:no-repeat center/120% url("images/bg.jpg");
     filter: grayscale(80%);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -60,24 +56,38 @@ body{
 
 .form-container{ 
     
-    width: 40%; 
+    width: 30%; 
     border: 1px solid whitesmoke; 
-    margin-right: 20px;
+    margin-right: 5%;
     min-height: 400px;
     background-color: var(--white-transparent);
-    backdrop-filter: blur(3px);
-    align-items: flex-start;
+    backdrop-filter: blur(5px);
+    align-items: center;
     border-radius: 3%;
+    /* text-shadow: 1px 1px black; */
 } 
 
-button{
-    min-width: 15rem;
-    height: 3rem;
+.logo {
+    margin-top: 3%;
+    max-width: 150px;
+    max-height: 150px;
+} 
+#img{
+    width: 150px;
+    height: 150px;
+}
+
+button#submit{
+    min-width: 80%;
+    height: 2.5rem;
     background: none; 
     text-align: center;
     border-radius: 3%;
+    border: 1px solid white;
+    color: white;
+    text-shadow: 1px 1px black;
+    outline: none;
 }
-
 
 .sign-form{
     color: white;
@@ -85,8 +95,6 @@ button{
     min-height: 80%;
     gap: 10px;
 }
-
-
 
 form label{
     display: block;
@@ -101,33 +109,47 @@ form .content-input{
  .content-input input{
     width: 90%;
     border-radius: 2%;
-    height: 1.5rem;
+    height: 2rem;
     border: none;
-    background-color: var(--white-transparent); 
+    background:none;
     border-bottom: 1px solid black;
 }
 
 #bool{
     width: 90%;
 }
+#bool input{
+    width: 1rem;
+}
 .content-input input:focus{
-
     border: none;
-    border: 3px solid green;
-    
+    border: 2px solid green; 
 } 
 
 .content-input span{
     position: relative;
-    top: 23px;
+    top: 28px;
+    font-weight: bold;
     transition: all .4s;
 }
 .content-input span.target{
     position: relative;
     top: 0px;
 }
+.content-input span:hover{
+    position: relative;
+    top: 0px;
+}
 
+input:focus{
+    outline: none;
+    border: none;
+    
+}
 
+input:invalid{
+    border: 2px solid red;
+}
 /*
 filtros 
 https://lenguajecss.com/css/efectos/filtros-css/

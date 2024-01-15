@@ -22,37 +22,42 @@
 
 
         <div class="form-container flex-column">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="" id="img">
+            </div>
             <form action="" method="post" class="sign-form flex-row">
 
                 <div class="content-input flex-column">
                     <label for="firstname">
-                    <span>Firstname:</span>
+                    <span id="e1">Firstname:</span>
                     </label>
-                    <input type="text" name="firstname" placeholder="Jhon">
+                    <input type="text" name="firstname" placeholder="Jhon" id="e1">
                 </div>
 
                 <div class="content-input flex-column">
                     <label for="lastname">
-                    Lastname:
+                    <span id="e2">Lastname:</span>
                     </label>
-                    <input type="text" name="lasname" placeholder="Doe">
+                    <input type="text" name="lastname" placeholder="Doe" id="e2">
                 </div>
                     
                 <div class="content-input flex-column">
                     <label for="email">
-                        Email:
+                       <span id="e3">
+                           Email:
+                       </span>
                     </label>
-                    <input type="email" placeholder="you@example.com" name="email" >
+                    <input type="email" placeholder="" name="email"id="e3" >
                 </div>
 
-                <div class="content-input flex-column">
+                <div class="content-input flex-column"id="e4">
                     <label for="date">
                         Date:
                     </label>
                     <input type="date" name="date">
                 </div>
 
-                <div class="content-input flex-column">
+                <div class="content-input flex-column" id="e5">
                     <label for="bool" id="bool">
                         are you agree with our terms and conditions?
                         <input type="checkbox" name="bool">
@@ -60,7 +65,7 @@
                 </div>
                 <button type="submit" id="submit">Submit!</button>
             </form>
-
+            <p>You have already an acount? <a href="">sign in</a></p>
         </div>
     </div>
     <script src="main.js"></script>
